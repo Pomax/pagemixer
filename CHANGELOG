@@ -1,3 +1,7 @@
+# v1.2.1
+
+- Made sure the banner on remixes is always on top by setting a z-index propery for it.
+
 # v1.2.0
 
 - Added style capturing, so that during save/publish all current stylesheet information

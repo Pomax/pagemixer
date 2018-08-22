@@ -294,6 +294,7 @@ class PageMixer {
                 color: white;
                 text-align: center;
                 font-family: Arial;
+                z-index: 2147483647;
             }
             .pagemix-banner a,
             .pagemix-banner a:visited,
