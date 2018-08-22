@@ -1,0 +1,22 @@
+# v1.2.0
+
+- Added style capturing, so that during save/publish all current stylesheet information
+  is written to a <style> element, and <link rel="stylesheet"> are removed. This keeps
+  pages looking pretty rather than super weird when the servers that host the external
+  stylesheets refuse to send them over due to CORS restrictions.
+
+# v1.1.0
+
+- Added a "parent" button to select the currently loaded element's parent tree instead
+- Added a "help" menu
+- Added a modal system so that publishing doesn't bombard you with a series
+  of confirm() and prompt() dialogs.
+
+# v1.0.1
+
+- Removed the document listening for the 'x' key, because it kept triggering
+  the extension even when you were just typing a comment somewhere. Not super nice =)
+
+# v1.0
+
+- Initial release

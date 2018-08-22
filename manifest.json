@@ -1,0 +1,60 @@
+{
+  "manifest_version": 2,
+  "name": "Page Mixer",
+  "version": "1.2.0",
+
+  "description": "Page Mixer lets people pop the hood on, inspect, and remix webpages.",
+
+  "icons": {
+    "48": "icons/inspect-48.png",
+    "96": "icons/inspect-96.png"
+  },
+
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": {
+      "16": "icons/inspect-16.png",
+      "32": "icons/inspect-32.png"
+    },
+    "default_title": "Page Mixer"
+  },
+
+  "background": {
+    "scripts": [
+      "main.js"
+    ]
+  },
+
+  "content_scripts": [
+    {
+      "matches": [ "*://*/*" ],
+      "js": [
+        "vendor/base64.js",
+        "vendor/codemirror.js",
+        "vendor/html-beautify.js",
+        "vendor/md5.min.js",
+        "vendor/mode/css/css.js",
+        "vendor/mode/htmlmixed/htmlmixed.js",
+        "vendor/mode/javascript/javascript.js",
+        "vendor/mode/xml/xml.js",
+        "utilities.js",
+        "modal.js",
+        "listening.js",
+        "editor.js",
+        "publisher.js",
+        "help.js",
+        "pagemixer.js"
+      ],
+      "css": [
+        "vendor/codemirror.css",
+        "pagemix.css"
+      ]
+    }
+  ],
+
+  "permissions": [
+    "*://*/*",
+    "storage",
+    "webRequest"
+  ]
+}

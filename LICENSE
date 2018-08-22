@@ -1,0 +1,30 @@
+All code except the list of dependency files noted below has been
+written as Public Domain code, unencumbered by a license of any kind.
+In jurisdictions that do not recognise the public domain, or that
+treat the Public Domain as legally "off-limits", this code is instead
+encumbered with an MIT license.
+
+  https://opensource.org/licenses/MIT
+
+
+The following dependencies are used, respecting their licenses:
+
+1. vendor/codemirror.js
+
+  https://codemirror.net
+  MIT license
+
+2. vendor/md5.min.js
+
+  https://github.com/blueimp/JavaScript-MD5
+  MIT license
+
+3. vendor/base64.js
+
+  http://www.webtoolkit.info/javascript_base64.html
+  Bespoke license: http://www.webtoolkit.info/license1/index.html
+
+4. vendor/html-beautify.js
+
+  https://stackoverflow.com/a/26361620/740553
+  unspecified license, used in good faith.

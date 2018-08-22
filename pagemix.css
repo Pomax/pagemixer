@@ -1,0 +1,125 @@
+#pagemix-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 30vh;
+    max-height: 320px;
+    background: rgba(56, 75, 129, 0.7);
+    z-index: 2147483646;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    font-family: Verdana;
+}
+
+#pagemix-overlay {
+    position: absolute;
+    z-index: 2147483645;
+    background: rgba(212, 26, 26, 0.5);
+    pointer-events: none;
+    cursor: pointer;
+}
+
+#pagemix-modal-underlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.534);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    z-index: 2147483647;
+}
+
+#pagemix-modal {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px 4px #222;
+    width: 36em;
+    padding: 1em;
+}
+
+#pagemix-modal h3 {
+    text-shadow: 4px 4px 0px #DDD;
+}
+
+#pagemix-modal .buttons {
+    padding-top: 2em;
+    text-align: center;
+}
+
+#pagemix-modal dl {
+    font-size: 16px;
+}
+
+#pagemix-modal dt {
+    font-weight: bold;
+    display: inline-block;
+}
+
+#pagemix-modal dd {
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+}
+
+
+#pagemix-modal button {
+    min-width: 5em;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 3px 3px 0px 0px #69d0e680;
+    background: #348ae9;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#pagemix-editor {
+    font-family: Verdana;
+    text-align: center;
+    font-size: 3vh;
+    line-height: 1;
+    box-sizing: border-box;
+    width: 100%;
+    height: calc(100% - 40px);
+    resize: none;
+    border: none;
+    background: rgba(255, 255, 252, 0.9);
+    color: purple;
+}
+
+#pagemix-controls {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#pagemix-controls button {
+    flex: 1 0 auto;
+    border: none;
+    background: rgb(41, 28, 53);
+    color: white;
+    font-family: inherit;
+    font-weight: bold;
+    font-variant: small-caps;
+    cursor: pointer;
+    max-width: 7em;
+    border-radius: 4px;
+    border: 2px solid rgba(255, 255, 255, 0.322);
+}
+
+#pagemix-controls button:hover {
+    background: rgb(87, 78, 90);
+}
+
+#pagemix-controls button:disabled {
+    background: rgb(0,0,0,0.3);
+    color: rgba(255,255,255,0.3);
+}
+
+#pagemix-controls button + button {
+    margin-left: 3px;
+}
+
